@@ -15,26 +15,6 @@
 # DEFAULT_TEMPLATE setting in the [global] section above. See the next section
 # on defining multiple templates.
 
-# note: if you want to add your own specific cluster definition, you should
-# do it at the end of your ~/.starcluster/cfgs/awskey.cfg
-
-
-## General lab clusters##
-#########################
-
-[cluster starcluster_base]
-KEYNAME = starcluster_base
-CLUSTER_SIZE = 1
-CLUSTER_USER = sgeadmin
-CLUSTER_SHELL = bash
-NODE_IMAGE_ID = ami-04bedf34
-NODE_INSTANCE_TYPE = r3.4xlarge
-force_spot_master = True
-AVAILABILITY_ZONE = us-west-2
-PLUGINS = base-tgr
-SPOT_BID = 1.50
-
-
 
 ## Ben's Clusters ##
 ####################
